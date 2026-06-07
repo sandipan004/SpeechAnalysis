@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeechAnalysis - Toxicity Detection</title>
+    <meta name="description" content="AI-powered tool to analyze and detect toxic language in comments.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="logo">Speech<span class="highlight">Analysis</span></h1>
+            <p class="subtitle">AI-powered toxicity detection using classical Machine Learning</p>
+        </header>
+
+        <section class="glass-panel input-section">
+            <form id="analyze-form">
+                <div class="input-group">
+                    <label for="text-input" class="sr-only">Enter text to analyze</label>
+                    <textarea 
+                        id="text-input" 
+                        name="text" 
+                        placeholder="Type a comment or message to analyze its toxicity..." 
+                        rows="4" 
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit" id="submit-btn" class="primary-btn">
+                    <span class="btn-text">Analyze Text</span>
+                    <span class="loader hidden"></span>
+                </button>
+            </form>
+        </section>
+
+        <section id="results-section" class="glass-panel results-section hidden">
+            <div class="results-header">
+                <h2>Analysis Results</h2>
+                <div id="overall-status" class="status-badge">Processing...</div>
+            </div>
+            
+            <div class="metrics-grid" id="metrics-container">
+                <!-- Metrics will be injected here via JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom JS -->
+    <script src="/static/script.js"></script>
+</body>
+</html>
