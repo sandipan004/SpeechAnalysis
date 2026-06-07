@@ -1,4 +1,4 @@
-# SpeechFlowGuard
+# SpeechAnalysis
 *Developed by Sandipan Dafadar
 
 A machine learning web API that detects toxic language in user comments using classical ML models (TF-IDF + Logistic Regression). Built with **FastAPI**, trained on the **Jigsaw Toxic Comment Classification Challenge** dataset.
@@ -22,7 +22,7 @@ A machine learning web API that detects toxic language in user comments using cl
 ## 🗂️ Project Structure
 
 ```
-SpeechFlowGuard/
+SpeechAnalysis/
 ├── app/
 │   ├── main.py
 │   ├── api.py
@@ -122,8 +122,8 @@ brew install git
 
 ### 📦 Clone the Repository
 ```bash
-git clone https://github.com/sandipan004/SpeechFlowGuard.git
-cd SpeechFlowGuard
+git clone https://github.com/sandipan004/SpeechAnalysis.git
+cd SpeechAnalysis
 ```
 
 ## 🔧 How to Train the Model
@@ -211,3 +211,4 @@ curl -X POST http://localhost:8000/predict \
 }
 ```
 
+"# SpeechAnalysis" 
