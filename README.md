@@ -1,15 +1,16 @@
 # SpeechAnalysis
 *Developed by Sandipan Dafadar
 
-A machine learning web API that detects toxic language in user comments using classical ML models (TF-IDF + Logistic Regression). Built with **FastAPI**, trained on the **Jigsaw Toxic Comment Classification Challenge** dataset.
+A machine learning web API and full-stack web application that detects toxic language in user comments using classical ML models (TF-IDF + Logistic Regression). Built with **FastAPI**, trained on the **Jigsaw Toxic Comment Classification Challenge** dataset, and featuring a custom-built premium frontend.
 
 ## ✅ Features
 
+- **Beautiful Web Interface**: A modern, glassmorphic dark-mode UI with animated toxicity progress bars.
 - Multi-label classification: 
   - `toxic`, `severe_toxic`, `obscene`, `threat`, `insult`, `identity_hate`
 - Real-time REST API (FastAPI)
 - Modular codebase
-- Dockerized for portability
+- Dockerized for instant portability
 - Preprocessed with custom regex cleaner
 
 
@@ -62,18 +63,12 @@ The FastAPI server exposes the following endpoints:
 
 ### `GET /`
 
-Returns a welcome message to confirm the API is live.
+Returns the fully functional Web App interface (HTML/CSS/JS) so users can interact with the toxicity detector directly from their browser.
 
 **Request:**
 
-`curl http://localhost:8000/`
-
-**Response:**
-```
-{
-  "message": "Hello and welcome to SpeechFlowGuard API"
-}
-```
+Open your browser and navigate to:
+`http://localhost:8000/`
 ### `POST /predict`
 
 Performs multi-label classification on the input text and returns the predicted probabilities for each toxicity label.
@@ -210,5 +205,3 @@ curl -X POST http://localhost:8000/predict \
   "identity_hate": 0.6681
 }
 ```
-
-"# SpeechAnalysis" 
