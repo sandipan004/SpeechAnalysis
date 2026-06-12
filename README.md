@@ -1,5 +1,5 @@
-# SpeechAnalysis
-*Developed by Sandipan Dafadar
+# [SpeechAnalysis](https://speechanalysis-e7q6.onrender.com/)
+Developed by Sandipan Dafadar
 
 A machine learning web API and full-stack web application that detects toxic language in user comments using classical ML models (TF-IDF + Logistic Regression). Built with **FastAPI**, trained on the **Jigsaw Toxic Comment Classification Challenge** dataset, and featuring a custom-built premium frontend.
 
